@@ -1,8 +1,107 @@
-<html>
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>danskkulturarv.dk</title>
+		<meta charset="utf-8" />
+		<title>Butterfly example</title>
+		<style type="text/css">
+	      body {
+	        padding-top: 57px;
+	        padding-bottom: 40px;
+	      }
+	    </style>
+		<link href="css/bootstrap-combined.min.css" rel="stylesheet">
+		<link href="css/style-bs.css" rel="stylesheet" media="screen"/>
 	</head>
-	<body>
-		<h1>Get ready for something huuuge!!!</h1>
+	<body class="frontpage">
+	
+	<!-- Topbar including logo & navigation -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/"><img src="images/dka-logo-top.png"></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gennemse <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Produkter</a></li>
+              <li><a href="#about">Events</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Om os <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>	
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <!-- Search field -->
+      <div class="searchfield">
+		<form id="Search" class="form-search" data-portalpath="http://api.test.chaos-systems.com/" data-results="#SearchResults" data-accesspoint="00000000-0000-0000-0000-0000204E0000" data-searchfilter="m00000000-0000-0000-0000-000063c30000_da_all:('{0}')">
+			<div class="input-append">
+				<input type="text" class="span2 search-query" placeholder="Search with CHAOS" />
+				<button type="submit" class="btn btn-primary">Search</button>
+			</div>
+		</form>
+      </div>
+
+      <!-- Main content area -->
+      <div class="row-fluid">
+      
+	      <div class="span8">
+		      <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="120%"
+			      poster="http://downol.dr.dk/download/bonanza//thumbs/000067344.jpg"
+			      data-setup="{}">
+			    <source src="rtmp://vod-bonanza.gss.dr.dk/bonanza/mp4:bonanza/2011/9/9/67344_720x540x1400K.mp4" type='video/mp4' />
+			    <source src="http://video-js.zencoder.com/oceans-clip.webm" type='video/webm' />
+			    <source src="http://video-js.zencoder.com/oceans-clip.ogv" type='video/ogg' />
+			    <track kind="captions" src="demo.captions.vtt" srclang="en" label="English" />
+			  </video>
+			  <div class="metadata">
+				  Metadata goes here
+			  </div>
+	      </div>
+		
+		<!-- Right sidebar -->
+		<div class="span4">
+          <div class="well sidebar-nav">
+	          Right sidebar
+          </div><!--/.well -->
+        </div><!--/span-->
+        
+      </div><!-- /row-fluid -->
+
+    </div><!-- /container -->
+	
+	<script src="js/retina.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+	
 	</body>
 </html>
